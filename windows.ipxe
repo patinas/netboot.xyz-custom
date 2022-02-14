@@ -4,7 +4,7 @@
 # https://www.microsoft.com
 
 set winpe_arch x64
-set win_image Win10_20H2_English_x64
+set win_image Win10
 set win_base_url http://192.168.1.20:8080/WinPE
 goto ${menu} ||
 
@@ -23,7 +23,7 @@ goto ${win_version}
 
 :image_set
 menu Image
-item Win10_20H2_English_x64
+item Win10
 choose win_image && goto windows
 
 :pe_arch_set
